@@ -34,7 +34,6 @@ public class SupermarketCheckout
       for (int i = 0; i < Items.Length; i++) {
         if (sku.Equals(Items[i].name)) {
           basket[i]++;
-          //   Console.WriteLine("Item added to basket"); -- debugging
           break;
         }
       }
@@ -55,7 +54,6 @@ public class SupermarketCheckout
           } else {
             totalPrice += count * item.Price;
           }
-        //   Console.WriteLine(item.name);
           Console.WriteLine(item.name + " | " + count);
         }
       }
