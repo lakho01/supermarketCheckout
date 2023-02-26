@@ -4,7 +4,13 @@ public class SupermarketCheckout
 {
     static void Main(string[] args) 
     {
-        Console.WriteLine("Welcome");
+        SupermarketCheckout checkout = new SupermarketCheckout();
+        Console.WriteLine("Item name | Quantity");
+        checkout.addItem("Apple");
+        checkout.addItem("Apple");
+        checkout.addItem("Banana");
+        checkout.addItem("Apple");
+        Console.WriteLine("Total price: {0:0.00}", checkout.totalPrice()); //"Total price: 160 (130 + 30)"
     }
 
     // Initialize Item Array with some initial data load
